@@ -20,3 +20,6 @@ switch (eCivil){
     default:
         document.write ("error")
 }
+
+document.write("<br>","ejercicio 2")
+let num =parseInt(prompt("ingrese un numero del 1 al 10"))
