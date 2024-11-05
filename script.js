@@ -21,5 +21,15 @@ switch (eCivil){
         document.write ("error")
 }
 
-document.write("<br>","ejercicio 2")
-let num =parseInt(prompt("ingrese un numero del 1 al 10"))
+document.write("ejercicio 2")
+let num
+let opor = 5
+while(true){
+    num = parseInt(prompt("ingrese un numero del 1 al 10"))
+    if(num>=1 && num<=10){
+        alert("gracias");
+        break;
+    }else
+        alert("debe ingresar un número válido entre 1 y 10")
+}
+
