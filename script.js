@@ -1,4 +1,4 @@
-let nombre = prompt ("ingrese su nombre")
+/*let nombre = prompt ("ingrese su nombre")
 let eCivil = parseInt(prompt("¿cual es su estado civil? : soltero = 1 , casado = 2, separado = 3, viudo = 4, union libre = 5 "))
 
 switch (eCivil){
@@ -32,4 +32,13 @@ while(true){
     }else
         alert("debe ingresar un número válido entre 1 y 10")
 }
+*/
+let suma = 0
+let numero
 
+do{
+    numero = parseInt(prompt("ingresa un numero para sumar (ingresa el 0000 para parar la suma)"));
+    if (numero!=="0000"){
+        suma + numero
+    }
+}while(numero!=="0000")
