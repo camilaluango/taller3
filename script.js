@@ -33,12 +33,30 @@ while(true){
         alert("debe ingresar un número válido entre 1 y 10")
 }
 */
+document.write("ejercicio 3")
 let suma = 0
 let numero
 
 do{
-    numero = parseInt(prompt("ingresa un numero para sumar (ingresa el 0000 para parar la suma)"));
+    numero = prompt("ingresa un numero para sumar (ingresa el 0000 para parar la suma)");
     if (numero!=="0000"){
-        suma + numero
+        valor = parseFloat(numero);
+       
+    }if (!isNaN(numero)) {
+        suma += valor;
+
+    } else {
+        alert("Por favor, ingresa un número válido.");
     }
-}while(numero!=="0000")
+}
+while(numero!=="0000"){
+    alert(`el valor acumulado de la suma es ${suma}`)
+    
+    if(suma > 0 ){
+        alert("el valor es mayor a 0")
+    }else if(suma < 0){
+        alert("el valor es menor a 0 ")
+    }else {
+        alert("el valor es igual a 0")
+    }
+}
